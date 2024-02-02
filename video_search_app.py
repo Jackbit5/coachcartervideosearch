@@ -78,21 +78,10 @@ if key_word:
 
         for start_time in start_times_list:
 
-            with stylable_container(
-                key=f"container_with_border_{start_time}",
-                css_styles="""
-                        {
-                            border: 1px solid rgba(49, 51, 63, 0.2);
-                            border-radius: 1rem;
-                            padding: calc(2em - 1px);
-    
-                        }
-                        """,
-            ):
-
-                st.video(
-                    f"https://youtu.be/sEC5lTD9SLA?si=5kSb3_FSN8QmQ2dS&t={start_time}"
-                )
+            st.video(
+                f"https://www.youtube.com/watch?v=sEC5lTD9SLA&t=0s&ab_channel=CoachCarter",
+                start_time=start_time,
+            )
 
 
 col1, col2 = st.columns(2)
