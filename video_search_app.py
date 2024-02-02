@@ -90,7 +90,7 @@ if key_word:
             ):
 
                 st.video(
-                    f"https://www.youtube.com/watch?v=sEC5lTD9SLA&ab_channel=CoachCarter={start_time}"
+                    f"https://youtu.be/sEC5lTD9SLA?si=5kSb3_FSN8QmQ2dS&t={start_time}"
                 )
 
 
