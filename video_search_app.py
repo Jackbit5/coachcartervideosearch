@@ -42,8 +42,7 @@ def find_word_in_srt_seconds(filename, word):
         if "-->" in line:
             # Extract and convert the start timestamp to seconds
             start_timestamp = line.split(" --> ")[0]
-            # current_start_time = math.floor(timestamp_to_seconds(start_timestamp))
-            current_start_time = timestamp_to_seconds(start_timestamp)
+            current_start_time = math.floor(timestamp_to_seconds(start_timestamp))
         elif word.lower() in line.lower():
             start_times.append(current_start_time)
 
