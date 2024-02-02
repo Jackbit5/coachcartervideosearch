@@ -1,6 +1,7 @@
 import streamlit as st
 from streamlit_extras.mention import mention
 from streamlit_extras.stylable_container import stylable_container
+import math
 
 st.set_page_config(
     page_title="Coach Carter Driving School",
@@ -41,7 +42,7 @@ def find_word_in_srt_seconds(filename, word):
         if "-->" in line:
             # Extract and convert the start timestamp to seconds
             start_timestamp = line.split(" --> ")[0]
-            current_start_time = timestamp_to_seconds(start_timestamp)
+            current_start_time = math.floor(timestamp_to_seconds(start_timestamp), 0)
         elif word.lower() in line.lower():
             start_times.append(current_start_time)
 
